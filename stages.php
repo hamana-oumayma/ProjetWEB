@@ -203,7 +203,7 @@ $entreprises = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <nav>
         <ul>
             <li><a href="stages.php">Voir les stages</a></li>
-            <li><a href="inscri.php">Ajouter un stage</a></li>
+            <li><a href="ajout_stage.php">Ajouter un stage</a></li>
         </ul>
     </nav>
 
