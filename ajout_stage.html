@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter un Stage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Ajouter une Offre de Stage</h2>
+    <form action="ajout_stage.php" method="POST">
+        <label for="titre">Titre:</label>
+        <input type="text" id="titre" name="titre" required>
+        <label for="entreprise">Entreprise:</label>
+        <input type="text" id="entreprise" name="entreprise" required>
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" required></textarea>
+        <button type="submit">Ajouter</button>
+    </form>
+</body>
+</html>

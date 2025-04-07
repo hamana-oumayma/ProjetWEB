@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background: white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #184425;
+}
+
+.form-header p {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.form-header a {
+    color: #ff4c38;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form label {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #0b4126;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #063d18;
+}
+
+form .reset-btn {
+    background: #e74c3c;
+    margin-top: 10px;
+}
+
+form .reset-btn:hover {
+    background: #c0392b;
+}
+
+.image-container {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    background-color: white;
+}
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>Inscription</h2>
+                <p>Vous avez déjà un compte ? <a href="login.html">Se connecter</a></p>
+            </div>
+            <form action="inscri.php" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
+                
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" name="password" placeholder="**********" required>
+                
+                <label for="confirm-password">Confirmer le mot de passe :</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="**********" required>
+                
+                <label for="role">Role :</label>
+                <input type="text" id="role" name="role"  required>
+                
+                <button type="submit">S'inscrire</button>
+                <button type="reset" class="reset-btn">Réinitialiser</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img src="img/stages.webp" alt="stage">
+        </div>
+    </div>
+</body>
+</html>
